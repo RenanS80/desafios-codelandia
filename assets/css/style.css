@@ -61,6 +61,12 @@ main .main-container .main-title {
   margin-top: 50px;
 }
 
+@media (max-width: 1440px) {
+  main .main-container .main-title {
+    padding: 0px 15px 0px 15px;
+  }
+}
+
 main .main-container .main-title h2,
 main .main-container .main-title p {
   color: #FFFFFF;
@@ -96,6 +102,26 @@ main .main-container .main-cards {
           justify-content: space-between;
 }
 
+@media (max-width: 1440px) {
+  main .main-container .main-cards {
+    padding: 0px 15px 0px 15px;
+  }
+}
+
+@media (max-width: 1228px) {
+  main .main-container .main-cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 410px) {
+  main .main-container .main-cards {
+    -ms-grid-columns: (300px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 300px);
+  }
+}
+
 main .main-container .main-cards .card {
   width: 400px;
   height: 477px;
@@ -104,6 +130,12 @@ main .main-container .main-cards .card {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 5px;
   margin-bottom: 80px;
+}
+
+@media (max-width: 410px) {
+  main .main-container .main-cards .card {
+    width: 300px;
+  }
 }
 
 main .main-container .main-cards .card .card-image {
