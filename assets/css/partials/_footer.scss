@@ -1,0 +1,24 @@
+footer {
+    height: 90px;
+    background: $black-light;
+
+    .footer-container {
+        @include flexSpaceBetween;
+        max-width: 1440px;
+        height: 100%;
+        margin: 0 auto;
+
+        @media (max-width: 1440px) {
+            padding: 0px 15px 0px 15px;
+        }
+
+        .footer-credit p{
+            color: $gray;
+        }
+
+        .contact {
+            display: flex;
+            gap: 27px;
+        }
+    }
+}

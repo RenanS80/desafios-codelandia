@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 90px;
+  background: #121212;
+  border-bottom: 2px solid #151515;
+}
+
+header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  header .header-container {
+    padding: 0px 15px 0px 15px;
+  }
+}
+
+header .header-container .header-logo h2 {
+  color: #FFFFFF;
+}
+
+header .header-container .header-toggle-theme {
+  cursor: pointer;
+}
+
+main .main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main .main-container .main-title {
+  margin-top: 50px;
+}
+
+main .main-container .main-title h2,
+main .main-container .main-title p {
+  color: #FFFFFF;
+}
+
+main .main-container .main-title .design {
+  margin-top: 20px;
+}
+
+main .main-container .main-title .discord {
+  margin-top: 10px;
+}
+
+main .main-container .main-title a {
+  color: #C9C9C9;
+  padding-right: 5px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+main .main-container .main-title a:hover {
+  opacity: 0.8;
+}
+
+main .main-container .main-cards {
+  margin-top: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (400px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 400px);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .main-container .main-cards .card {
+  width: 400px;
+  height: 477px;
+  background: #151515;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
+  margin-bottom: 80px;
+}
+
+main .main-container .main-cards .card .card-image {
+  height: 202px;
+}
+
+main .main-container .main-cards .card .card-image img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+main .main-container .main-cards .card .card-info {
+  height: 275px;
+}
+
+main .main-container .main-cards .card .card-info .card-info-title,
+main .main-container .main-cards .card .card-info .tecnology-icons {
+  margin: 25px 0px 0px 15px;
+}
+
+main .main-container .main-cards .card .card-info .card-info-title h3,
+main .main-container .main-cards .card .card-info .tecnology-icons h3 {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+main .main-container .main-cards .card .card-info .tecnology-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+main .main-container .main-cards .card .card-info .tecnology-icons p {
+  color: #C9C9C9;
+}
+
+main .main-container .main-cards .card .card-info .card-buttons {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+main .main-container .main-cards .card .card-info .card-buttons .demo-button,
+main .main-container .main-cards .card .card-info .card-buttons .repository-button {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+main .main-container .main-cards .card .card-info .card-buttons .demo-button {
+  background: #127475;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7px;
+  padding: 12px 60px;
+  border: 0;
+}
+
+main .main-container .main-cards .card .card-info .card-buttons .demo-button:hover {
+  opacity: 0.75;
+}
+
+main .main-container .main-cards .card .card-info .card-buttons .repository-button {
+  background: transparent;
+  color: #FFFFFF;
+  padding: 12px 50px;
+  border: 1px solid #FFFFFF;
+}
+
+main .main-container .main-cards .card .card-info .card-buttons .repository-button:hover {
+  background: #FFFFFF;
+  color: #151515;
+}
+
+footer {
+  height: 90px;
+  background: #151515;
+}
+
+footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  footer .footer-container {
+    padding: 0px 15px 0px 15px;
+  }
+}
+
+footer .footer-container .footer-credit p {
+  color: #C9C9C9;
+}
+
+footer .footer-container .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 27px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #121212;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #7D7D7D;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #C9C9C9;
+}
+/*# sourceMappingURL=style.css.map */

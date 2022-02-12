@@ -1,0 +1,35 @@
+@mixin flexSpaceBetween(){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    height: 90px;
+    background: $black;
+    border-bottom: 2px solid $black-light;
+
+    .header-container {
+        @include flexSpaceBetween;
+        max-width: 1440px;
+        height: 100%;
+        margin: 0 auto;
+
+        @media (max-width: 1440px) {
+            padding: 0px 15px 0px 15px;
+        }
+
+        .header-logo h2{
+            color: $white;
+        }
+
+        .header-toggle-theme {
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
