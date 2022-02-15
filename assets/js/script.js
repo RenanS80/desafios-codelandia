@@ -16,6 +16,12 @@ tippy('.jquery-icon', {
 });
 
 
+// Scroll Reveal
+ScrollReveal().reveal('.card', { delay: 250 });
+ScrollReveal().reveal('footer', { delay: 100 });
+
+
+
 // Back to top button
 const toTop = document.querySelector('.to-top');
 
@@ -39,8 +45,6 @@ const toTopIcon = document.getElementById('to-top-icon');
 const footer = document.querySelector('footer');
 const contact = document.getElementsByClassName('fa-brands')
 const modeToggle = document.querySelector('.mode-toggle');
-
-
 
 modeToggle.addEventListener('click', () => {
     modeToggle.classList.toggle('active');
