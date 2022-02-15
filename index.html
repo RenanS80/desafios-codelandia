@@ -20,8 +20,9 @@
                 <h2>Codelândia</h2>
             </div>
 
-            <div class="header-toggle-theme">
-                <img src="assets/img/svg/sun.svg" alt="Light Mode" onload="SVGInject(this)" />
+            <div class="mode-toggle">
+                <img id="sun" src="assets/img/svg/sun.svg" alt="Light Mode" onload="SVGInject(this)" />
+                <img id="moon" src="assets/img/svg/moon.svg" alt="Dark Mode" onload="SVGInject(this)" />
             </div>
         </div>
     </header>
@@ -149,13 +150,17 @@
                         </div>
                     </div>
                 </div>
-
-            
             </div>
         </div>
+
+        <a href="#" class="to-top">
+            <img id="to-top-light" src="assets/img/svg/arrow-up.svg" alt="Back to top" onload="SVGInject(this)" />
+            <img id="to-top-dark" src="assets/img/svg/arrow-up-dark.svg" alt="Back to top" onload="SVGInject(this)" />
+        </a>
+
     </main>
 
-    <footer>
+    <footer id="footer">
         <div class="footer-container">
             <div class="footer-credit">
                 <p>@ 2022 - Renan Soares</p>

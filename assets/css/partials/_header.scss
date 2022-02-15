@@ -6,8 +6,8 @@
 
 header {
     height: 90px;
-    background: $black;
     border-bottom: 2px solid $black-light;
+    color: $white;
 
     .header-container {
         @include flexSpaceBetween;
@@ -19,16 +19,35 @@ header {
             padding: 0px 15px 0px 15px;
         }
 
-        .header-logo h2{
-            color: $white;
+        .mode-toggle {
+            cursor: pointer;
+
+            #moon {
+                display: none;
+            }
+
+            #sun {
+                display: block;
+            }
         }
 
-        .header-toggle-theme {
-            cursor: pointer;
+        .mode-toggle.active {
+
+            #moon {
+                display: block;
+            }
+
+            #sun {
+                display: none;
+            }
         }
     }
 }
 
+header.light {
+    border-bottom: 2px solid $gray-light;
+    color: $black-light;
+}
 
 
 

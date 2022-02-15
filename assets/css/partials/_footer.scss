@@ -1,6 +1,7 @@
 footer {
     height: 90px;
     background: $black-light;
+    color: $gray;
 
     .footer-container {
         @include flexSpaceBetween;
@@ -12,13 +13,23 @@ footer {
             padding: 0px 15px 0px 15px;
         }
 
-        .footer-credit p{
-            color: $gray;
-        }
-
         .contact {
             display: flex;
             gap: 27px;
+
+            svg path {
+                stroke: $white;
+            }
+
+            svg path.light {
+                stroke: $black-light;
+            }
         }
     }
+}
+
+footer.light {
+    background: $white;
+    color: $black-light;
+    border-top: 2px solid $gray-light;
 }

@@ -19,8 +19,8 @@ a {
 
 header {
   height: 90px;
-  background: #121212;
   border-bottom: 2px solid #151515;
+  color: #FFFFFF;
 }
 
 header .header-container {
@@ -44,12 +44,33 @@ header .header-container {
   }
 }
 
-header .header-container .header-logo h2 {
-  color: #FFFFFF;
+header .header-container .mode-toggle {
+  cursor: pointer;
 }
 
-header .header-container .header-toggle-theme {
-  cursor: pointer;
+header .header-container .mode-toggle #moon {
+  display: none;
+}
+
+header .header-container .mode-toggle #sun {
+  display: block;
+}
+
+header .header-container .mode-toggle.active #moon {
+  display: block;
+}
+
+header .header-container .mode-toggle.active #sun {
+  display: none;
+}
+
+header.light {
+  border-bottom: 2px solid #F2F2F2;
+  color: #151515;
+}
+
+main {
+  color: #FFFFFF;
 }
 
 main .main-container {
@@ -65,11 +86,6 @@ main .main-container .main-title {
   main .main-container .main-title {
     padding: 0px 15px 0px 15px;
   }
-}
-
-main .main-container .main-title h2,
-main .main-container .main-title p {
-  color: #FFFFFF;
 }
 
 main .main-container .main-title .design {
@@ -89,6 +105,10 @@ main .main-container .main-title a {
 
 main .main-container .main-title a:hover {
   opacity: 0.8;
+}
+
+main .main-container .main-title a.light {
+  color: #7D7D7D;
 }
 
 main .main-container .main-cards {
@@ -126,6 +146,7 @@ main .main-container .main-cards .card {
   width: 400px;
   height: 477px;
   background: #151515;
+  color: #FFFFFF;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 5px;
@@ -164,7 +185,6 @@ main .main-container .main-cards .card .card-info .tecnology-icons {
 
 main .main-container .main-cards .card .card-info .card-info-title h3,
 main .main-container .main-cards .card .card-info .tecnology-icons h3 {
-  color: #FFFFFF;
   font-weight: 500;
 }
 
@@ -173,10 +193,6 @@ main .main-container .main-cards .card .card-info .tecnology-icons {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-}
-
-main .main-container .main-cards .card .card-info .tecnology-icons p {
-  color: #C9C9C9;
 }
 
 main .main-container .main-cards .card .card-info .card-buttons {
@@ -235,9 +251,71 @@ main .main-container .main-cards .card .card-info .card-buttons .repository-butt
   color: #151515;
 }
 
+main .main-container .main-cards .card .card-info .card-buttons .repository-button.light {
+  color: #127475;
+  border: 1px solid #127475;
+}
+
+main .main-container .main-cards .card .card-info .card-buttons .repository-button.light:hover {
+  background: #7D7D7D;
+  border: 1px solid #7D7D7D;
+  color: #FFFFFF;
+}
+
+main .main-container .main-cards .card.light {
+  background: #FFFFFF;
+  color: #151515;
+}
+
+main .to-top {
+  position: fixed;
+  bottom: 106px;
+  right: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+main .to-top #to-top-light {
+  display: block;
+}
+
+main .to-top #to-top-dark {
+  display: none;
+}
+
+main .to-top.active {
+  bottom: 106px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+main .to-top.active #to-top-light.active {
+  display: none;
+}
+
+main .to-top.active #to-top-dark.active {
+  display: block;
+}
+
+main.light {
+  color: #151515;
+}
+
 footer {
   height: 90px;
   background: #151515;
+  color: #C9C9C9;
 }
 
 footer .footer-container {
@@ -261,15 +339,25 @@ footer .footer-container {
   }
 }
 
-footer .footer-container .footer-credit p {
-  color: #C9C9C9;
-}
-
 footer .footer-container .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 27px;
+}
+
+footer .footer-container .contact svg path {
+  stroke: #FFFFFF;
+}
+
+footer .footer-container .contact svg path.light {
+  stroke: #151515;
+}
+
+footer.light {
+  background: #FFFFFF;
+  color: #151515;
+  border-top: 2px solid #F2F2F2;
 }
 
 * {
@@ -282,6 +370,10 @@ footer .footer-container .contact {
 
 body {
   background: #121212;
+}
+
+body.light {
+  background: #FDFDFD;
 }
 
 html {

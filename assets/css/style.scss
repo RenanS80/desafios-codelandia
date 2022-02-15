@@ -17,6 +17,10 @@ body {
     background: $black;
 }
 
+body.light {
+    background: $white-dark;
+}
+
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;

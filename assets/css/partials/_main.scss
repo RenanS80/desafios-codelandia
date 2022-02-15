@@ -1,5 +1,6 @@
 main {
-    
+    color: $white;
+
     .main-container {
         max-width: 1440px;
         margin: 0 auto;
@@ -9,11 +10,6 @@ main {
 
             @media (max-width: 1440px) {
                 padding: 0px 15px 0px 15px;
-            }
-
-            h2,
-            p {
-                color: $white;
             }
 
             .design {
@@ -32,6 +28,10 @@ main {
                 &:hover {
                     opacity: 0.8;
                 }
+            }
+
+            a.light {
+                color: $gray-dark;
             }
         }
 
@@ -57,6 +57,7 @@ main {
                 width: 400px;
                 height: 477px;
                 background: $black-light;
+                color: $white;
                 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                 border-radius: 5px;
                 margin-bottom: 80px;
@@ -86,7 +87,6 @@ main {
                         margin: 25px 0px 0px 15px;
 
                         h3 {
-                            color: $white;
                             font-weight: 500;
                         }
                     }
@@ -94,10 +94,6 @@ main {
                     .tecnology-icons {
                         display: flex;
                         gap: 10px;
-
-                        p {
-                            color: $gray;
-                        }
                     }
 
                     .card-buttons {
@@ -143,9 +139,64 @@ main {
                                 color: $black-light;
                             }
                         }
+
+                        .repository-button.light {
+                            color: $green;
+                            border: 1px solid $green;
+
+                            &:hover {
+                                background: $gray-dark;
+                                border: 1px solid $gray-dark;
+                                color: $white;
+                            }
+                        }
                     }
                 }
             }
+
+            .card.light {
+                background: $white;
+                color: $black-light;
+            }
         }
     }
+
+    .to-top {
+        position: fixed;
+        bottom: 106px;
+        right: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .5s ease;
+
+        #to-top-light {
+            display: block;
+        }
+
+        #to-top-dark {
+            display: none;
+        }
+        
+    }
+
+    .to-top.active {
+        bottom: 106px;
+        pointer-events: auto;
+        opacity: 1;
+
+        #to-top-light.active {
+            display: none;
+        }
+
+        #to-top-dark.active {
+            display: block;
+        }
+    }
+}
+
+main.light {
+    color: $black-light;
 }
