@@ -286,12 +286,19 @@ main .to-top {
   transition: all .5s ease;
 }
 
-main .to-top #to-top-light {
-  display: block;
+@media (max-width: 992px) {
+  main .to-top {
+    display: none;
+  }
 }
 
-main .to-top #to-top-dark {
-  display: none;
+main .to-top #to-top-icon {
+  color: #FFFFFF;
+  font-size: 28px;
+}
+
+main .to-top #to-top-icon.light {
+  color: #151515;
 }
 
 main .to-top.active {
@@ -346,12 +353,15 @@ footer .footer-container .contact {
   gap: 27px;
 }
 
-footer .footer-container .contact svg path {
-  stroke: #FFFFFF;
+footer .footer-container .contact .fa-brands,
+footer .footer-container .contact .fa-brands {
+  color: #FFFFFF;
+  font-size: 24px;
 }
 
-footer .footer-container .contact svg path.light {
-  stroke: #151515;
+footer .footer-container .contact .fa-brands.light,
+footer .footer-container .contact .fa-brands.light {
+  color: #151515;
 }
 
 footer.light {

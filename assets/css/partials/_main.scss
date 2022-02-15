@@ -172,12 +172,17 @@ main {
         pointer-events: none;
         transition: all .5s ease;
 
-        #to-top-light {
-            display: block;
+        @media (max-width: 992px) {
+            display: none;
         }
 
-        #to-top-dark {
-            display: none;
+        #to-top-icon {
+            color: $white;
+            font-size: 28px;
+        }
+
+        #to-top-icon.light {
+            color: $black-light;
         }
         
     }

@@ -35,11 +35,11 @@ const header = document.querySelector('header');
 const main = document.querySelector('main');
 const mainLinks = document.querySelectorAll('main a');
 const card = document.querySelectorAll('.card');
-const toTopLight = document.getElementById('to-top-light');
-const toTopDark = document.getElementById('to-top-dark');
+const toTopIcon = document.getElementById('to-top-icon');
 const footer = document.querySelector('footer');
-const contact = document.querySelectorAll('.contact svg path');
+const contact = document.getElementsByClassName('fa-brands')
 const modeToggle = document.querySelector('.mode-toggle');
+
 
 
 modeToggle.addEventListener('click', () => {
@@ -47,6 +47,7 @@ modeToggle.addEventListener('click', () => {
     body.classList.toggle('light');
     header.classList.toggle('light');
     main.classList.toggle('light');
+    toTopIcon.classList.toggle('light');
     footer.classList.toggle('light');
 
     mainLinks.forEach(link => {
@@ -57,15 +58,15 @@ modeToggle.addEventListener('click', () => {
         link.classList.toggle('light');
     })
 
-    contact.forEach(link => {
-        link.classList.toggle('light');
-    })
+    for(let i = 0; i < contact.length; i++) {
+        contact[i].classList.toggle('light');
+    }
 
     if(main.classList.contains('light')){
-        toTopDark.classList.toggle('active')
+        toTopDark.classList.toggle('active');
     }
     else {
-        toTopLight.classList.toggle('active')
+        toTopLight.classList.toggle('active');
     }
 })
 

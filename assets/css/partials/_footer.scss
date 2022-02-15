@@ -17,12 +17,15 @@ footer {
             display: flex;
             gap: 27px;
 
-            svg path {
-                stroke: $white;
+            .fa-brands,
+            .fa-brands {
+                color: $white;
+                font-size: 24px;
             }
 
-            svg path.light {
-                stroke: $black-light;
+            .fa-brands.light,
+            .fa-brands.light {
+                color: $black-light;
             }
         }
     }
