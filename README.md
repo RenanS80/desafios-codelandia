@@ -13,7 +13,6 @@ Foram utilizadas as seguintes tecnologias:
 
 * Javascript
 * SASS
-* SVG Inject
 * ScrollReveal
 * Tippy.js
 
