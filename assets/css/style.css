@@ -9,7 +9,7 @@ h2 {
 h3 {
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 24px;
 }
 
@@ -38,9 +38,9 @@ header .header-container {
   margin: 0 auto;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1500px) {
   header .header-container {
-    padding: 0px 15px 0px 15px;
+    padding: 0px 20px;
   }
 }
 
@@ -78,14 +78,14 @@ main .main-container {
   margin: 0 auto;
 }
 
-main .main-container .main-title {
-  margin-top: 50px;
+@media (max-width: 1500px) {
+  main .main-container {
+    padding: 0px 20px;
+  }
 }
 
-@media (max-width: 1440px) {
-  main .main-container .main-title {
-    padding: 0px 15px 0px 15px;
-  }
+main .main-container .main-title {
+  margin-top: 50px;
 }
 
 main .main-container .main-title .design {
@@ -115,36 +115,43 @@ main .main-container .main-cards {
   margin-top: 80px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (400px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 400px);
+  -ms-grid-columns: (300px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 300px);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-@media (max-width: 1440px) {
-  main .main-container .main-cards {
-    padding: 0px 15px 0px 15px;
-  }
-}
-
-@media (max-width: 1228px) {
+@media (max-width: 1271px) {
   main .main-container .main-cards {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 640px) {
   main .main-container .main-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: (400px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 400px);
+  }
+}
+
+@media (max-width: 444px) {
+  main .main-container .main-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-grid-columns: (300px)[auto-fill];
         grid-template-columns: repeat(auto-fill, 300px);
   }
 }
 
 main .main-container .main-cards .card {
-  width: 400px;
-  height: 477px;
+  width: 300px;
+  height: 450px;
   background: #151515;
   color: #FFFFFF;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -153,14 +160,20 @@ main .main-container .main-cards .card {
   margin-bottom: 80px;
 }
 
-@media (max-width: 410px) {
+@media (max-width: 640px) {
+  main .main-container .main-cards .card {
+    width: 400px;
+  }
+}
+
+@media (max-width: 444px) {
   main .main-container .main-cards .card {
     width: 300px;
   }
 }
 
 main .main-container .main-cards .card .card-image {
-  height: 202px;
+  height: 180px;
 }
 
 main .main-container .main-cards .card .card-image img {
@@ -174,13 +187,9 @@ main .main-container .main-cards .card .card-image img {
      object-position: top;
 }
 
-main .main-container .main-cards .card .card-info {
-  height: 275px;
-}
-
 main .main-container .main-cards .card .card-info .card-info-title,
 main .main-container .main-cards .card .card-info .tecnology-icons {
-  margin: 25px 0px 0px 15px;
+  margin: 20px 0px 0px 15px;
 }
 
 main .main-container .main-cards .card .card-info .card-info-title h3,
@@ -196,7 +205,7 @@ main .main-container .main-cards .card .card-info .tecnology-icons {
 }
 
 main .main-container .main-cards .card .card-info .card-buttons {
-  margin-top: 50px;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,7 +240,7 @@ main .main-container .main-cards .card .card-info .card-buttons .demo-button {
       -ms-flex-align: center;
           align-items: center;
   gap: 7px;
-  padding: 12px 60px;
+  padding: 12px 53px;
   border: 0;
 }
 
@@ -252,13 +261,13 @@ main .main-container .main-cards .card .card-info .card-buttons .repository-butt
 }
 
 main .main-container .main-cards .card .card-info .card-buttons .repository-button.light {
-  color: #127475;
-  border: 1px solid #127475;
+  color: #151515;
+  border: 1px solid #151515;
 }
 
 main .main-container .main-cards .card .card-info .card-buttons .repository-button.light:hover {
-  background: #7D7D7D;
-  border: 1px solid #7D7D7D;
+  background: #151515;
+  border: 1px solid #151515;
   color: #FFFFFF;
 }
 
@@ -340,9 +349,9 @@ footer .footer-container {
   margin: 0 auto;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1500px) {
   footer .footer-container {
-    padding: 0px 15px 0px 15px;
+    padding: 0px 20px;
   }
 }
 
@@ -365,7 +374,7 @@ footer .footer-container .contact .fa-brands.light {
 }
 
 footer.light {
-  background: #FFFFFF;
+  background: #F2F2F2;
   color: #151515;
   border-top: 2px solid #F2F2F2;
 }
