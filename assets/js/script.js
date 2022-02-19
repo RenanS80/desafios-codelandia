@@ -36,6 +36,14 @@ const projects = [
         classe: ["html5-icon", "css3-icon"],
         website: "https://renans80.github.io/login/",
         repository: "https://github.com/RenanS80/login"
+    },
+    {
+        image: 'assets/img/desafio5.jpg',
+        title: "05 - A Viagem de Chihiro",
+        tecnology: ["assets/img/svg/react.svg", "assets/img/svg/typescript.svg", "assets/img/svg/css3.svg"],
+        classe: ["react-icon", "typescript-icon", "css3-icon"],
+        website: "https://renan-a-viagem-de-chihiro.netlify.app/",
+        repository: "https://github.com/RenanS80/a-viagem-de-chihiro"
     }
 ];
 
@@ -143,4 +151,12 @@ tippy('.javascript-icon', {
 
 tippy('.jquery-icon', {
     content: 'jQuery',
+});
+
+tippy('.typescript-icon', {
+    content: 'Typescript',
+});
+
+tippy('.react-icon', {
+    content: 'React',
 });
