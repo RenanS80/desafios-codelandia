@@ -70,6 +70,10 @@ tippy('.css3-icon', {
     content: 'CSS 3',
 });
 
+tippy('.sass-icon', {
+    content: 'SASS',
+});
+
 tippy('.javascript-icon', {
     content: 'Javascript',
 });

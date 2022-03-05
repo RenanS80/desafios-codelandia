@@ -44,6 +44,15 @@ const projects = [
         classe: ["react-icon", "typescript-icon", "css3-icon"],
         website: "https://renan-a-viagem-de-chihiro.netlify.app/",
         repository: "https://github.com/RenanS80/a-viagem-de-chihiro"
+    },
+
+    {
+        image: 'assets/img/desafio6.jpg',
+        title: "06 - Loki",
+        tecnology: ["assets/img/svg/html5.svg", "assets/img/svg/sass.svg"],
+        classe: ["html5-icon", "sass-icon"],
+        website: "https://renans80.github.io/loki/",
+        repository: "https://github.com/RenanS80/loki"
     }
 ];
 
