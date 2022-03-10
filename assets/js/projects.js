@@ -53,6 +53,15 @@ const projects = [
         classe: ["html5-icon", "sass-icon"],
         website: "https://renans80.github.io/loki/",
         repository: "https://github.com/RenanS80/loki"
+    },
+
+    {
+        image: 'assets/img/desafio7.jpg',
+        title: "07 - Valorant",
+        tecnology: ["assets/img/svg/html5.svg", "assets/img/svg/css3.svg"],
+        classe: ["html5-icon", "css3-icon"],
+        website: "https://renans80.github.io/valorant/",
+        repository: "https://github.com/RenanS80/valorant"
     }
 ];
 
