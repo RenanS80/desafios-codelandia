@@ -62,6 +62,15 @@ const projects = [
         classe: ["html5-icon", "css3-icon"],
         website: "https://renans80.github.io/valorant/",
         repository: "https://github.com/RenanS80/valorant"
+    },
+
+    {
+        image: 'assets/img/desafio8.jpg',
+        title: "08 - CodeMoji",
+        tecnology: ["assets/img/svg/html5.svg", "assets/img/svg/sass.svg", "assets/img/svg/javascript.svg"],
+        classe: ["html5-icon", "sass-icon", "javascript-icon"],
+        website: "https://renans80.github.io/codemoji/",
+        repository: "https://github.com/RenanS80/codemoji"
     }
 ];
 
