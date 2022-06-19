@@ -71,6 +71,14 @@ const projects = [
         classe: ["html5-icon", "sass-icon", "javascript-icon"],
         website: "https://renans80.github.io/codemoji/",
         repository: "https://github.com/RenanS80/codemoji"
+    },
+    {
+        image: 'assets/img/desafio9.jpg',
+        title: "09 - Naped",
+        tecnology: ["assets/img/svg/react.svg", "assets/img/svg/sass.svg", "assets/img/svg/axios.svg"],
+        classe: ["react-icon", "sass-icon", "axios-icon"],
+        website: "https://www.youtube.com/watch?v=Iwn8Fq7AYJw",
+        repository: "https://github.com/RenanS80/naped"
     }
 ];
 

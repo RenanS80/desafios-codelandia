@@ -3,7 +3,6 @@ ScrollReveal().reveal('.card', { delay: 250 });
 ScrollReveal().reveal('footer', { delay: 100 });
 
 
-
 // Back to top button
 const toTop = document.querySelector('.to-top');
 
@@ -15,8 +14,6 @@ window.addEventListener('scroll', () => {
         toTop.classList.remove('active');
     }
 })
-
-
 
 
 // Dark/Light mode
@@ -59,8 +56,6 @@ modeToggle.addEventListener('click', () => {
 })
 
 
-
-
 // Tooltip tecnologias
 tippy('.html5-icon', {
     content: 'HTML 5',
@@ -88,4 +83,8 @@ tippy('.typescript-icon', {
 
 tippy('.react-icon', {
     content: 'React',
+});
+
+tippy('.axios-icon', {
+    content: 'Axios',
 });
