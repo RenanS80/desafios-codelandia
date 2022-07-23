@@ -45,7 +45,6 @@ const projects = [
         website: "https://renan-a-viagem-de-chihiro.netlify.app/",
         repository: "https://github.com/RenanS80/a-viagem-de-chihiro"
     },
-
     {
         image: 'assets/img/desafio6.jpg',
         title: "06 - Loki",
@@ -54,7 +53,6 @@ const projects = [
         website: "https://renans80.github.io/loki/",
         repository: "https://github.com/RenanS80/loki"
     },
-
     {
         image: 'assets/img/desafio7.jpg',
         title: "07 - Valorant",
@@ -63,7 +61,6 @@ const projects = [
         website: "https://renans80.github.io/valorant/",
         repository: "https://github.com/RenanS80/valorant"
     },
-
     {
         image: 'assets/img/desafio8.jpg',
         title: "08 - CodeMoji",
@@ -79,6 +76,14 @@ const projects = [
         classe: ["react-icon", "sass-icon", "axios-icon"],
         website: "https://www.youtube.com/watch?v=Iwn8Fq7AYJw",
         repository: "https://github.com/RenanS80/naped"
+    },
+    {
+        image: 'assets/img/desafio10.jpg',
+        title: "10 - Jogo da Memória",
+        tecnology: ["assets/img/svg/html5.svg", "assets/img/svg/css3.svg", "assets/img/svg/javascript.svg"],
+        classe: ["html5-icon", "css3-icon", "javascript-icon"],
+        website: "https://renans80.github.io/jogo-da-memoria-halloween/",
+        repository: "https://github.com/RenanS80/jogo-da-memoria-halloween"
     }
 ];
 
