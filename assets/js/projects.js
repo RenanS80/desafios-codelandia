@@ -84,6 +84,14 @@ const projects = [
         classe: ["html5-icon", "css3-icon", "javascript-icon"],
         website: "https://renans80.github.io/jogo-da-memoria-halloween/",
         repository: "https://github.com/RenanS80/jogo-da-memoria-halloween"
+    },
+    {
+        image: 'assets/img/desafio11.png',
+        title: "11 - La Pizza",
+        tecnology: ["assets/img/svg/react.svg", "assets/img/svg/typescript.svg", "assets/img/svg/css3.svg"],
+        classe: ["react-icon", "typescript-icon", "css3-icon"],
+        website: "https://renan-la-pizza.netlify.app/",
+        repository: "https://github.com/RenanS80/la-pizza"
     }
 ];
 
