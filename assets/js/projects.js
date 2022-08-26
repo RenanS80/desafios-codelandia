@@ -92,6 +92,14 @@ const projects = [
         classe: ["react-icon", "typescript-icon", "css3-icon"],
         website: "https://renan-la-pizza.netlify.app/",
         repository: "https://github.com/RenanS80/la-pizza"
+    },
+    {
+        image: 'assets/img/desafio12.jpg',
+        title: "12 - Arcane",
+        tecnology: ["assets/img/svg/html5.svg", "assets/img/svg/css3.svg"],
+        classe: ["html5-icon", "css3-icon"],
+        website: "https://renans80.github.io/arcane/",
+        repository: "https://github.com/RenanS80/arcane"
     }
 ];
 
