@@ -100,6 +100,14 @@ const projects = [
         classe: ["html5-icon", "css3-icon"],
         website: "https://renans80.github.io/arcane/",
         repository: "https://github.com/RenanS80/arcane"
+    },
+    {
+        image: 'assets/img/desafio13.jpg',
+        title: "12 - Natal",
+        tecnology: ["assets/img/svg/react.svg", "assets/img/svg/typescript.svg", "assets/img/svg/css3.svg"],
+        classe: ["react-icon", "typescript-icon", "css3-icon"],
+        website: "https://renan-natal-codelandia.netlify.app/",
+        repository: "https://github.com/RenanS80/natal"
     }
 ];
 
