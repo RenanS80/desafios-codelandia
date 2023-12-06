@@ -1,6 +1,6 @@
 // Make Projects Cards
-const mainCards = document.querySelector('.main-cards');
-const cardFirst = document.querySelector('.card');
+const MAIN_CARDS = document.querySelector('.main-cards');
+const CARD_FIRST = document.querySelector('.card');
 
 const projects = [
     {
@@ -103,34 +103,42 @@ const projects = [
     },
     {
         image: 'assets/img/desafio13.jpg',
-        title: "12 - Natal",
+        title: "13 - Natal",
         tecnology: ["assets/img/svg/react.svg", "assets/img/svg/typescript.svg", "assets/img/svg/css3.svg"],
         classe: ["react-icon", "typescript-icon", "css3-icon"],
         website: "https://renan-natal-codelandia.netlify.app/",
         repository: "https://github.com/RenanS80/natal"
+    },
+    {
+        image: 'assets/img/desafio14.jpg',
+        title: "14 - Rachi",
+        tecnology: ["assets/img/svg/html5.svg", "assets/img/svg/css3.svg", "assets/img/svg/javascript.svg"],
+        classe: ["html5-icon", "css3-icon", "javascript-icon"],
+        website: "https://renans80.github.io/Rachi/",
+        repository: "https://github.com/RenanS80/Rachi"
     }
 ];
 
 
 projects.map(project => {
-    const cardClone = cardFirst.cloneNode(true);
-    cardClone.querySelector(".card-image img").src = project.image;
-    cardClone.querySelector(".card-info-title h3").innerHTML = project.title;
+    const CARD_CLONE = CARD_FIRST.cloneNode(true);
+    CARD_CLONE.querySelector(".card-image img").src = project.image;
+    CARD_CLONE.querySelector(".card-info-title h3").innerHTML = project.title;
 
-    const tecno = cardClone.querySelector('.tecnology-icons')
+    const TECNO = CARD_CLONE.querySelector('.tecnology-icons')
     
     for(let i = 0; i < project.tecnology.length; i++){
         let newImage = document.createElement("img");
-        tecno.appendChild(newImage);
-        const tecnoImg = cardClone.querySelectorAll('.tecnology-icons img');
-        tecnoImg[i].src = project.tecnology[i];
-        tecnoImg[i].classList.add(project.classe[i]);
+        TECNO.appendChild(newImage);
+        const TECNO_IMG = CARD_CLONE.querySelectorAll('.tecnology-icons img');
+        TECNO_IMG[i].src = project.tecnology[i];
+        TECNO_IMG[i].classList.add(project.classe[i]);
     }
 
-    cardClone.querySelector(".card-buttons .demo-button").href = project.website;
-    cardClone.querySelector(".card-buttons .repository-button").href = project.repository;
+    CARD_CLONE.querySelector(".card-buttons .demo-button").href = project.website;
+    CARD_CLONE.querySelector(".card-buttons .repository-button").href = project.repository;
 
-    mainCards.appendChild(cardClone);
+    MAIN_CARDS.appendChild(CARD_CLONE);
 })
 
-cardFirst.remove();
+CARD_FIRST.remove();
