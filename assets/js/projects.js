@@ -23,11 +23,11 @@ const projects = [
     },
     {
         image: 'assets/img/desafio3.jpg',
-        title: "03 - One Page",
-        tecnology: ["assets/img/svg/html5.svg", "assets/img/svg/css3.svg", "assets/img/svg/jQuery.svg"],
-        classe: ["html5-icon", "css3-icon", "jquery-icon"],
-        website: "https://renans80.github.io/one-page/",
-        repository: "https://github.com/RenanS80/one-page"
+        title: "03 - TechBlog",
+        tecnology: ["assets/img/svg/html5.svg", "assets/img/svg/css3.svg"],
+        classe: ["html5-icon", "css3-icon"],
+        website: "https://renans80.github.io/tech-blog/",
+        repository: "https://github.com/RenanS80/tech-blog"
     },
     {
         image: 'assets/img/desafio4.jpg',
