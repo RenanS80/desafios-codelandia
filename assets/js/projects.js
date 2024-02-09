@@ -70,48 +70,48 @@ const projects = [
         repository: "https://github.com/RenanS80/codemoji"
     },
     {
-        image: 'assets/img/desafio9.jpg',
-        title: "09 - Naped",
+        image: 'assets/img/desafio10.jpg',
+        title: "10 - Naped",
         tecnology: ["assets/img/svg/react.svg", "assets/img/svg/sass.svg", "assets/img/svg/axios.svg"],
         classe: ["react-icon", "sass-icon", "axios-icon"],
         website: "https://www.youtube.com/watch?v=Iwn8Fq7AYJw",
         repository: "https://github.com/RenanS80/naped"
     },
     {
-        image: 'assets/img/desafio10.jpg',
-        title: "10 - Jogo da Memória",
+        image: 'assets/img/desafio11.jpg',
+        title: "11 - Jogo da Memória",
         tecnology: ["assets/img/svg/html5.svg", "assets/img/svg/css3.svg", "assets/img/svg/javascript.svg"],
         classe: ["html5-icon", "css3-icon", "javascript-icon"],
         website: "https://renans80.github.io/jogo-da-memoria-halloween/",
         repository: "https://github.com/RenanS80/jogo-da-memoria-halloween"
     },
     {
-        image: 'assets/img/desafio11.png',
-        title: "11 - La Pizza",
+        image: 'assets/img/desafio12.png',
+        title: "12 - La Pizza",
         tecnology: ["assets/img/svg/react.svg", "assets/img/svg/typescript.svg", "assets/img/svg/css3.svg"],
         classe: ["react-icon", "typescript-icon", "css3-icon"],
         website: "https://renan-la-pizza.netlify.app/",
         repository: "https://github.com/RenanS80/la-pizza"
     },
     {
-        image: 'assets/img/desafio12.jpg',
-        title: "12 - Arcane",
+        image: 'assets/img/desafio13.jpg',
+        title: "13 - Arcane",
         tecnology: ["assets/img/svg/html5.svg", "assets/img/svg/css3.svg"],
         classe: ["html5-icon", "css3-icon"],
         website: "https://renans80.github.io/arcane/",
         repository: "https://github.com/RenanS80/arcane"
     },
     {
-        image: 'assets/img/desafio13.jpg',
-        title: "13 - Natal",
+        image: 'assets/img/desafio16.jpg',
+        title: "16 - Natal",
         tecnology: ["assets/img/svg/react.svg", "assets/img/svg/typescript.svg", "assets/img/svg/css3.svg"],
         classe: ["react-icon", "typescript-icon", "css3-icon"],
         website: "https://renan-natal-codelandia.netlify.app/",
         repository: "https://github.com/RenanS80/natal"
     },
     {
-        image: 'assets/img/desafio14.jpg',
-        title: "14 - Rachi",
+        image: 'assets/img/desafio19.jpg',
+        title: "19 - Rachi",
         tecnology: ["assets/img/svg/html5.svg", "assets/img/svg/css3.svg", "assets/img/svg/javascript.svg"],
         classe: ["html5-icon", "css3-icon", "javascript-icon"],
         website: "https://renans80.github.io/Rachi/",
