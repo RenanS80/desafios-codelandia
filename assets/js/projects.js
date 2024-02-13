@@ -116,6 +116,14 @@ const projects = [
         classe: ["html5-icon", "css3-icon", "javascript-icon"],
         website: "https://renans80.github.io/Rachi/",
         repository: "https://github.com/RenanS80/Rachi"
+    },
+    {
+        image: 'assets/img/desafio25.jpg',
+        title: "25 - HomeYou",
+        tecnology: ["assets/img/svg/react.svg", "assets/img/svg/css3.svg"],
+        classe: ["react-icon", "css3-icon"],
+        website: "https://home-you-renan.netlify.app/",
+        repository: "https://github.com/RenanS80/homeyou"
     }
 ];
 
